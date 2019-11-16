@@ -2,7 +2,7 @@ author = "Takana Norimasa"
 baseURL = "https://Seigenkousya.github.io/"
 languageCode = "ja"
 theme = "hugo-theme-m10c"
-title = "正弦工社"
+title = "正弦工社(Seigenkousya)"
 
 [params]
 logo = "/images/logo.jpg"
