@@ -1,9 +1,16 @@
-author = "Takana Norimasa"
 baseURL = "https://Seigenkousya.github.io/"
 languageCode = "ja"
 theme = "hugo-theme-m10c"
 title = "正弦工社"
 
 [params]
+author = "Takana Norimasa"
 logo = "/images/1551099363.png"
 
+[[params.social]]
+	name = "twitter"
+	url = "https://twitter.com/Seigenkousya"
+
+[[params.social]]
+	name = "github"
+	url = "https://github.com/Seigenkousya"
