@@ -4,6 +4,8 @@ date: 2019-11-17T01:13:51+09:00
 draft: true
 ---
 
-#Hello
-Seigenkousya is world wide technology group;
+# はじめに
+長らくTwitter名だけでやってきたが今回blogの形にすることにした。  
+正弦工社は技術{同人|結社|集団|コミュニティ|ブログ}である。総勢一名。  
+
 
