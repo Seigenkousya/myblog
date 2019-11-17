@@ -5,7 +5,8 @@ title = "正弦工社"
 
 [params]
 author = "Takana Norimasa"
-logo = "/images/1551099363.png"
+description="正弦工社 is 技術{同人|結社|集団|コミュニティ|ブログ} "
+logo = "/images/logo.png"
 
 [[params.social]]
 	name = "twitter"
@@ -14,3 +15,7 @@ logo = "/images/1551099363.png"
 [[params.social]]
 	name = "github"
 	url = "https://github.com/Seigenkousya"
+
+[[params.social]]
+	name = "qiita"
+	url = "https://qiita.com/Seigenkousya"
