@@ -1,7 +1,7 @@
 ---
 title: "世界一かわいいプログラムを書こう"
 date: 2019-12-06T23:07:49+09:00
-draft: false
+draft: true
 ---
 
 この記事は「[まんがタイムきらら Advent Calendar 2019](https://adventar.org/calendars/4098)」の13日目の記事です。
