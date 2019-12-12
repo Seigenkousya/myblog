@@ -203,6 +203,10 @@ Buzz
 これにより世界で一番かわいいFizzBuzzを書くことに成功しました。  
 ソースコードはこちら。  
 [https://github.com/Seigenkousya/momone_fizzbuzz](https://github.com/Seigenkousya/momone_fizzbuzz)
+  
+Twitterに載せたやつ  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">精神が限界に達した時に書いた世界一かわいいFizzBuzzです<a href="https://twitter.com/hashtag/doubiju?src=hash&amp;ref_src=twsrc%5Etfw">#doubiju</a> <a href="https://twitter.com/hashtag/FizzBuzz?src=hash&amp;ref_src=twsrc%5Etfw">#FizzBuzz</a> <a href="https://t.co/xhWfHXqFqw">https://t.co/xhWfHXqFqw</a> <a href="https://t.co/8Cx3dUAE4q">pic.twitter.com/8Cx3dUAE4q</a></p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1131209142880784384?ref_src=twsrc%5Etfw">May 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 
 # 終わりに
 一応、「まんがタイムきらら Advent Calendar 2019」ってことでプログラム分からん人にも熱意だけは伝えられるようにしたんですがどうですかね？  
@@ -215,6 +219,7 @@ Buzz
 [1巻：https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks](https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks)  
 [2巻：https://www.amazon.co.jp/gp/product/B07BRMN6S7?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks](https://www.amazon.co.jp/gp/product/B07BRMN6S7?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks)  
 [3巻：https://www.amazon.co.jp/gp/product/B07QCBKKZB?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks](https://www.amazon.co.jp/gp/product/B07QCBKKZB?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks)  
+
 ## これから
 実はこれのQuineバージョンもあるのでそれも記事にしてAdvent calendarに加えたいなぁと思っています。  
 任意のCのコードと画像からASCIIプログラムを生成するツールを作るのが当面の目標なので頑張りたいです。  
