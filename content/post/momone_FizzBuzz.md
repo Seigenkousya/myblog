@@ -1,7 +1,7 @@
 ---
 title: "世界一かわいいプログラムを書こう"
 date: 2019-12-06T23:07:49+09:00
-draft: true
+draft: false
 ---
 
 この記事は「[まんがタイムきらら Advent Calendar 2019](https://adventar.org/calendars/4098)」の13日目の記事です。
@@ -201,7 +201,9 @@ Buzz
 
 # 終わりに
 一応、「まんがタイムきらら Advent Calendar 2019」ってことでプログラム分からん人にも熱意だけは伝えられるようにしたんですがどうですかね？  
-いつか記事にしてまとめたいと思っていたネタをまとめられてスッキリ。  
+このAdvent calendarの為にこのブログを構築したんですがgithub pages+hugoを使ってmarkdownで簡単に記事が書けるようになったので満足です。  
+暇を見つけて非技術系の純然たるきららの記事も追加で何個か頑張って書きたいなぁ。  
+いつかこのネタは記事にしてまとめたいと思っていたネタをまとめられてスッキリ。  
 技術的にはまだまだ頑張りようがあるので精進したいです。  
 どうして私が美術科に！？を買おう！（ダイマ）  
 [1巻：https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks](https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks)  
