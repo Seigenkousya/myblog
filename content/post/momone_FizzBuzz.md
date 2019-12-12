@@ -19,6 +19,7 @@ draft: false
 プログラムには美しいプログラムとそうでないプログラムがあります。  
 美しいプログラムというのは要は誰が見ても内容を理解しやすく見やすいプログラムです。これが書ける人はちやほやされます。  
 逆に読みづらいプログラムは内容が理解しづらかったり、後で修正するのが面倒だったりもうそれは大変です。  
+  
 あるとき僕は考えました。この世に美しいプログラムやカッコいいプログラムがあっても、見ていて癒されるかわいいプログラムは無いなぁと。  
 プログラムを書いているときに思うように動かなければ心が荒みます。  
 しかし、そのプログラム自体が美少女だったらどうでしょう。自然と笑顔を取り戻すことができるはずです。  
@@ -59,14 +60,14 @@ This is perl 5, version 28, subversion 1 (v5.28.1) built for x86_64-linux-gnu-th
 
 ## 対象とするプログラム
 プログラマの技能の基本とも言えるFizzBuzzにしましょう。  
-FizzBuzzというのは数字を順に羅列していって、もし3で割りきれるなら数字の代わりにFizzもし5で割りきれるなら数字の代わりにBizzそれ以外ならそのまま数字を表示と言うプログラムです。  
+FizzBuzzというのは数字を順に羅列していって、もし3で割りきれるなら数字の代わりにFizzもし5で割りきれるなら数字の代わりにBizzそれ以外ならそのまま数字を表示する簡単なプログラムです。  
 表示例はこんな感じ。  
 ```
 1
 2
-Fizz
+Fizz　（3は3の倍数）
 4
-Buzz
+Buzz　（5は5の倍数）
 Fizz
 7
 8
@@ -76,7 +77,7 @@ Buzz
 Fizz
 13
 14
-FizzBuzz
+FizzBuzz　（15は3と5の倍数）
 16
 17
 Fizz
@@ -130,6 +131,7 @@ print(($_%3?"":Fizz).($_%5?"":Buzz)or$_)for 1..100
 ```
 だいぶ小さくなりました。  
 これらをコンパイルの通る最小単位に分割します。
+最小単位に分割することでAAに混ぜても違和感が無いようにします。  
 
 ```perl
 print
@@ -168,10 +170,13 @@ for
 そうしたら後はさっき作ったプログラムと合成させるだけです。  
 今回は最も愚直で簡単な方法を書きます。（これ以外にも方法はたくさんあるがこれが一番簡単）  
 行頭にPerlのコメントアウトである#を付けてさっきの細分化されたコードを頭につける方法です。（固定ツイに載せているのはこの方式）  
+これにより生成したアスキーアートがすべて行頭の#によってコメントアウトされプログラム的な意味を持たなくなります。  
+そして#の前にある細分化されたプログラムだけが意味を持つ命令として解釈されるので綺麗に動くという算段です。（~~ぶっちゃけコメントアウトを使うのはずるいと思う~~）  
+  
 つけてみるとこんな感じ。  
 ![momone_FizzBuzz](/images/1_momone_FizzBuzz.png)
 か゛わ゛い゛い゛な゛ぁ゛桃゛音゛ち゛ゃ゛ん゛  
-プログラムとして実行すると実行結果は無論こうなります。  
+プログラムとして実行すると実行結果は無論こうなりちゃんと動いていることが確認できます。  
 ```
 1
 2
@@ -202,15 +207,16 @@ Buzz
 # 終わりに
 一応、「まんがタイムきらら Advent Calendar 2019」ってことでプログラム分からん人にも熱意だけは伝えられるようにしたんですがどうですかね？  
 このAdvent calendarの為にこのブログを構築したんですがgithub pages+hugoを使ってmarkdownで簡単に記事が書けるようになったので満足です。  
-暇を見つけて非技術系の純然たるきららの記事も追加で何個か頑張って書きたいなぁ。  
+暇を見つけて非技術系の純然たるきららの記事も追加で何個か頑張って書きたいなぁ。（あわよくばAdvent calendarもせっかくなのでもっと埋めたい） 
 いつかこのネタは記事にしてまとめたいと思っていたネタをまとめられてスッキリ。  
 技術的にはまだまだ頑張りようがあるので精進したいです。  
+  
 どうして私が美術科に！？を買おう！（ダイマ）  
 [1巻：https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks](https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks)  
 [2巻：https://www.amazon.co.jp/gp/product/B07BRMN6S7?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks](https://www.amazon.co.jp/gp/product/B07BRMN6S7?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks)  
 [3巻：https://www.amazon.co.jp/gp/product/B07QCBKKZB?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks](https://www.amazon.co.jp/gp/product/B07QCBKKZB?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks)  
 ## これから
-実はこれのQuineバージョンもあるのでそれも記事にしてadvent calendarに加えたいなぁと思っています。  
+実はこれのQuineバージョンもあるのでそれも記事にしてAdvent calendarに加えたいなぁと思っています。  
 任意のCのコードと画像からASCIIプログラムを生成するツールを作るのが当面の目標なので頑張りたいです。  
 
 [^1]:どうびじゅは僕の人生です。[Amazonのリンク](https://www.amazon.co.jp/dp/B06XFYK4PN/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
