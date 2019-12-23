@@ -59,8 +59,8 @@ $_=q{print"\$_=q{$_};eval"};eval
 
 これらの実行の流れを見ているとあることに気がつきます。  
 それは、```print```命令の前に何を置いてもQuineとして成立するということです。  
-何を書こうが暗黙変数で参照されてQuineになります。ただし、標準出力に関係ない処理である必要があります。  
-例えば、変数helloを置いてもQuineは成立します。
+何を書こうが暗黙変数で参照されてQuineになりますが、標準出力に関係ない処理である必要があります。  
+例えば、変数```$hello```をprint命令の前に置いてもQuineは成立します。
 ```perl
 $_=q{$hello;print"\$_=q{$_};eval"};eval
 ```
@@ -71,7 +71,7 @@ $ perl -E '$_=q{$hello;print"\$_=q{$_};eval"};eval'
 $_=q{$hello;print"\$_=q{$_};eval"};eval
 ```
 
-大丈夫。  
+ちゃんと動く。  
 ならばこれを応用すればAAにも適用できるのでは？と考えました。  
 
 # 実際にやってみた
@@ -96,10 +96,10 @@ q演算子の区切りにはAAで使用率の低かった```|```と```*```を採
 
 # 終わりに
 前回から少し成長してコメントを使ったせこい技を使わずに済んだのは大きいかなと思います。  
-桃音ちゃんから桃音ちゃんが生成されるなんて素晴らしいですね。  
-まだまだ可能性はいっぱいあると思うのでこれからも精進したいなぁと思いました。  
+桃音ちゃんから桃音ちゃんが生成されるなんて素晴らしいですね。（危険な主義主張）  
+プログラミングにはまだまだ可能性がいっぱいあると思うのでこれからも精進していきたいなぁと思いました。  
 
-まぁこれを読んでいる読者諸氏なら当然持っているだろうが、一応言っておく。  
+まぁこの記事を読んでいる読者諸氏なら当然持っているだろうが、一応言っておく。  
 どうして私が美術科に！？を買おう！（ダイマ）  
 [1巻：https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks](https://www.amazon.co.jp/gp/product/B06XFYK4PN?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks)  
 [2巻：https://www.amazon.co.jp/gp/product/B07BRMN6S7?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks](https://www.amazon.co.jp/gp/product/B07BRMN6S7?ref_=dbs_p_pwh_rwt_anx_cl_1&storeType=ebooks)  
