@@ -201,6 +201,7 @@ Buzz
 ...（以下100まで）
 ```
 これにより世界で一番かわいいFizzBuzzを書くことに成功しました。  
+ありがとう桃音ちゃん。ありがとう相崎先生。  
 ソースコードはこちら。  
 [https://github.com/Seigenkousya/momone_fizzbuzz](https://github.com/Seigenkousya/momone_fizzbuzz)
   
