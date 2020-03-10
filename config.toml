@@ -21,5 +21,7 @@ logo = "/images/logo.png"
 	url = "https://github.com/Seigenkousya"
 
 [[params.social]]
-	name = "qiita"
+	name = "Qiita"
+	icon="fab icon-quiita fa-2x"
+	weight=3
 	url = "https://qiita.com/Seigenkousya"
