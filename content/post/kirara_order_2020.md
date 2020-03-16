@@ -4,6 +4,10 @@ date: 2020-03-14T13:37:56+09:00
 draft: false
 ---
 
+
+![carat_result](/images/max_2020_mod.png)
+↑今回の成果  
+
 # はじめに
 この記事は過去に書いた[どうびじゅの連載終了が告知され心と胃を痛めているきららmax読者のためのスクレイピングを使ったデータ収集と考察のススメ - Qiita](https://qiita.com/Seigenkousya/items/8f0ffbd2c34a8e8535e2)のリバイバル版です。  
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://qiita.com/Seigenkousya/items/8f0ffbd2c34a8e8535e2" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2FSeigenkousya%2Fitems%2F8f0ffbd2c34a8e8535e2&key=dd60c159c87f40f1ecca839b51b281e8&iframe=card-small"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script>
