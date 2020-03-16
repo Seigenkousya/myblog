@@ -1,7 +1,7 @@
 ---
 title: "まんがタイムきららキャラットの掲載順を可視化・分析する2020"
 date: 2020-03-16T19:40:40+09:00
-draft: true
+draft: false
 ---
 
 ![carat_result](/images/carat_2020_mod.png)
