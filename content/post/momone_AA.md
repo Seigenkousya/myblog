@@ -2,6 +2,7 @@
 title: "桃音ちゃんのAAの形をした桃音ちゃんのAAの形をした桃音ちゃんのAAの形をした...桃音ちゃんのAAを出力するプログラム"
 date: 2019-12-21T23:40:35+09:00
 tags: ["技術活動","どうして私が美術科に"]
+categories: "技術活動"
 draft: false
 ---
 この記事は「[まんがタイムきらら Advent Calendar 2019](https://adventar.org/calendars/4098)」の23日目の記事にして[13日目](https://seigenkousya.github.io/post/momone_fizzbuzz/)のオマケ記事です。  
