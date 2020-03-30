@@ -12,6 +12,13 @@ author = "Takana Norimasa"
 description="正弦工社 is 技術{同人|結社|集団|コミュニティ|ブログ} "
 logo = "/images/logo.png"
 
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [[params.social]]
 	name = "twitter"
 	url = "https://twitter.com/Seigenkousya"
