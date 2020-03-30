@@ -12,6 +12,12 @@ author = "Takana Norimasa"
 description="正弦工社 is 技術{同人|結社|集団|コミュニティ|ブログ} "
 logo = "/images/logo.png"
 
+[params.style]
+  darkestColor	= "#242930"
+  darkColor	= "#353b43"
+  lightColor	= "#bfcac4"
+  lightestColor = "#ffffff"
+  primaryColor	= "#57cc8a"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
