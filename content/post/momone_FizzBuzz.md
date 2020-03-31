@@ -28,6 +28,7 @@ draft: false
 そして、当時の僕にはもう一つこのかわいいプログラムを書かねばならない理由がありました。  
 それがこちらです。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【おしらせ】本日2月19日発売のまんがタイムきららMAXに「どうして私が美術科に!?」38話目載せてもらっています。<br>そして次号、最終話です。 <a href="https://t.co/Ars5radT6o">pic.twitter.com/Ars5radT6o</a></p>&mdash; 相崎うたう@きららMAXゲスト (@py_py_ai) <a href="https://twitter.com/py_py_ai/status/1097828975823413249?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 僕の[Qiitaの記事](https://qiita.com/Seigenkousya)を読んだことのある人ならお分かりでしょうが、僕はこの出来事に大きなショックを受け1月半以上家に引きこもっていました。  
 不眠と嘔吐に耐えながら僕はプログラムに打ち込むことで気を紛らわせていました。  
 当時の僕には癒されるプログラムが、心の支えが必要だったのです。  
@@ -43,6 +44,7 @@ draft: false
 僕にとっては「どうして私が美術科に！？」[^1]の酒井桃音ちゃんだったので（ももきなをすこれ）桃音ちゃんの力を借りてプログラムを書こうと思います。  
 モデルにするイラストは以下。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【おしらせ】11月19日発売のまんがタイムきららMAXに「どうして私が美術科に!?」11話目載せてもらっています。初めての合同制作、ということでグループ名からどんな作品を作るのかまで悩みっぱなしな回です。そしてセンターカラーを頂いた来月号にお話は続きます。よろしくお願いします！ <a href="https://t.co/4GxWCpKfDh">pic.twitter.com/4GxWCpKfDh</a></p>&mdash; 相崎うたう@きららMAXゲスト (@py_py_ai) <a href="https://twitter.com/py_py_ai/status/799947825924554752?ref_src=twsrc%5Etfw">November 19, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 ~~か゛わ゛い゛い゛な゛ぁ゛桃゛音゛ち゛ゃ゛ん゛~~  
 
 ちなみにこの号の予告絵（桃音）と次号の予告絵（黄奈子）がつながっていてヤバみがヤバい（僕はこれで1000回死んだ）  
