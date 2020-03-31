@@ -13,9 +13,10 @@ draft: false
 # はじめに
 この記事は過去に書いた[どうびじゅの連載終了が告知され心と胃を痛めているきららmax読者のためのスクレイピングを使ったデータ収集と考察のススメ - Qiita](https://qiita.com/Seigenkousya/items/8f0ffbd2c34a8e8535e2)のリバイバル版です。  
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://qiita.com/Seigenkousya/items/8f0ffbd2c34a8e8535e2" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2FSeigenkousya%2Fitems%2F8f0ffbd2c34a8e8535e2&key=dd60c159c87f40f1ecca839b51b281e8&iframe=card-small"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
 もうこの記事から1年経っているので新しくデータを集めて可視化しようかなと。  
 毎年一回はやりたいなこれ。（気に入ってる）  
-キャラット版は[こちら](https://seigenkousya.github.io/post/kirara_order_2020/) ~~（まだ作ってない）~~作った  
+キャラット版は[こちら](https://seigenkousya.github.io/post/kirara_order_2020/) ~~（まだ作ってない）~~ 作った  
 
 # データの収集
 なんと書いた本人がやり方を全く覚えていません。  
@@ -25,6 +26,7 @@ draft: false
 
 ### 環境
 実行環境はこちら。
+
 ```terminal
 $ uname -a                                                                                                                              
 Linux kali 4.18.0-kali2-amd64 #1 SMP Debian 4.18.10-2kali1 (2018-10-09) x86_64 GNU/Linux
