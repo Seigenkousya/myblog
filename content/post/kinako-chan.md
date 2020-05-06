@@ -1,0 +1,211 @@
+---
+title: '桃音ちゃんのお気持ちになって開発できるプログラミング言語"kinako-chan"を作った話'
+date: 2020-05-06T01:07:03+09:00
+tags: ["技術活動","どうして私が美術科に！？"]
+categories: "技術活動"
+draft: true
+---
+
+## はじめに
+この前TLでどうびじゅが完結して一周年だという話題が上がっていてもう一年経つのかという驚きと同時に
+一年経っても未だに絵を書いてる人とか語っている人がいて同じどうびじゅが好きな人間として嬉しい限りであると同時に
+本当に素晴らしい作品は例え月日が流れてもファンの間で語り続けられるんだなぁと感動しました。  
+なんて希望のある事実でしょうか。  
+そんなことをあれこれ考えながら過去のどうびじゅに関するツイートを色々見返していたんですがふとこんなツイートを見かけたんです。  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">きららMAX1月号の大人気連載、相崎うたう先生の「どうして私が美術科に!?」！今回はタイポグラフィの課題ということで、初めてのPCルームにはしゃぐX室メンバーです。しかし桃音さん、そのデザインは……。コミックス第1巻好評発売中！（<a href="https://t.co/a2r7QMa2pB">https://t.co/a2r7QMa2pB</a>） <a href="https://t.co/CVzkRQdXom">pic.twitter.com/CVzkRQdXom</a></p>&mdash; まんがタイムきらら編集部 (@mangatimekirara) <a href="https://twitter.com/mangatimekirara/status/931176574824542208?ref_src=twsrc%5Etfw">November 16, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+みなさんご存知2巻のタイポグラフィ回です。（予告絵のカーソルで桃音ちゃんのほっぺをもちもちしてるやつ好き）  
+僕はその中のこのコマに着目しました。    
+![](https://pbs.twimg.com/media/DOw0HQDVwAE92LD?format=jpg&name=medium)    
+そして僕は気がついてしまったのです...  
+<font size="5"><b>もしもこの世に黄奈子ちゃんという言葉だけで構成されたプログラミング言語を開発したらこのコマの桃音ちゃんのお気持ちになってプログラムを書けるのでは？</b></font>と。  
+おそらくこの行を読んで9割の人間がブラウザバックしたと思うので残りの1割の方はそのまま聞いてください。  
+だってしょうがないじゃないですか。そういう風に見えるんだもん。  
+もう僕には桃音ちゃんがプログラマにしか見えません。  
+僕だって桃音ちゃんがプログラムを書いてるところ見てみたいですよ。  
+でも僕は絵は書けないし聖典である原作にコラージュなんて恐れ多いことはできない。  
+なら現実を改変するしか無いじゃないですか。  
+こうなったら仕方ない。作りましょう。黄奈子ちゃん言語。    
+
+## 仕様策定
+まずは言語仕様を決めましょう。（え？マジでやるの？とかいうツッコミは無しで）  
+最初は黄,奈,子,ち,ゃ,んの六文字の組み合わせにしようかと思っていたのですが、そうするとあの絵面にはならないなぁと思ったのでこの案はボツにしました。  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">唐突に&#39;黄&#39;, &#39;奈&#39;, &#39;子&#39;, &#39;ち&#39;, &#39;ゃ&#39;, &#39;ん&#39; の六文字を使ったプログラミング言語を開発したら桃音ちゃんをプログラマに仕立て上げることができるのでは？とひらめいてしまった</p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1254284968844357632?ref_src=twsrc%5Etfw">April 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+でもパターンを少なくすると今度はコードが以上に長くなって可読性が落ちるので「黄奈子ちゃん」という言葉と見た目の形はそのままに文字を微妙に変えて表現することにしました。  
+さてどうやって言語を実装しようかと悩んでいたのですが、単純な言語実装として有名な[brainfuck](https://ja.wikipedia.org/wiki/Brainfuck)をベースにすることにしました。[^1]  
+[^1]:そういうプログラミング言語があるんです。（リンク参照）  
+
+brainfuckは8個の命令からなる超小型のプログラミング言語です。大きな要素数を持ったuint8_t型の一次元配列とそれらの各要素を指すデータポインタによって構成されています。  
+各命令はこんな感じです。
+
+|brainfuck|意味|C language|
+|:-------:|-------|-------|
+|+|&nbsp;ポインタが指しているデータを1個増やす|&nbsp;(\*ptr)++;|
+|-|&nbsp;ポインタが指しているデータを1個減らす|&nbsp;(\*ptr)--;|
+|>|&nbsp;ポインタを右に1個ずらす|&nbsp;ptr++;|
+|<|&nbsp;ポインタを左に1個ずらす|&nbsp;ptr--;|
+|.|&nbsp;ポインタが指しているデータを出力する|&nbsp;putchar(\*ptr);|
+|,|&nbsp;入力をポインタが指しているデータに代入する|&nbsp;\*ptr=getchar();|
+|[|&nbsp;ポインタが0なら次の]の1個右にポインタを移動させる|&nbsp;while(\*ptr){|
+|]|&nbsp;ポインタが0でないなら前の[の1個右にポインタを移動させる|&nbsp;}|
+
+ポインタを操作して中身の数値を増減させながら目的の数値や文字を出力する感じです。  
+僕はまずこれを実装することからはじめました。（ちょうどやってみたかったし）  
+で、できたのがこれです。  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">とりあえずbrainf\*ckをベースにすることにしたのでインタプリタ兼ビジュアライザを実装してみた<br>あとはパースするトークンをいい感じに置換して終わり <a href="https://t.co/NyfZF0oGVr">pic.twitter.com/NyfZF0oGVr</a></p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1256189016472293376?ref_src=twsrc%5Etfw">May 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+言語仕様が簡単なので実装もあっという間でした。なのでついでにビジュアライザ機能も付けてみました。  
+これを見ればある程度はこの言語のやっていることが分かるのでは無いでしょうか。  
+
+brainfuckのインタプリタ（プログラムを解釈して実行するプログラム）ができたのでbrainfuckが持っている8命令をそのまま自分の好きな言葉で置き換えれば黄奈子ちゃん言語が完成するということになります。  
+簡単ですね！
+
+試行錯誤の末（結局確定するのに2日くらいかかった）仕様は以下のようになりました。
+
+|kinako-chan|Meaning|brainfuck|C language|
+|------------|-------|:----:|-------|
+|黄奈子ちゃん黄奈子ちゃん|&nbsp;increment the data pointer|+|&nbsp;(\*ptr)++;|
+|黄奈子ちゃん黃奈子ちゃん|&nbsp;decrement the data pointer|-|&nbsp;(\*ptr)--;|
+|黃奈子ちゃん黄奈子ちゃん|&nbsp;increment the byte at the data pointer|>|&nbsp;ptr++;|
+|黃奈子ちゃん黃奈子ちゃん|&nbsp;decrement the byte at the data pointer|<|&nbsp;ptr--;|
+|黃奈子ちゃん黄奈孑ちゃん|&nbsp;output the byte at the data pointer|.|&nbsp;putchar(\*ptr);|
+|黃奈子ちゃん黃奈孑ちゃん|&nbsp;accept one byte of input|,|&nbsp;\*ptr=getchar();|
+|黄奈子ちゃん黄奈孑ちゃん|&nbsp;jump to '黄奈子ちゃん黄奈孑ちゃん' <br>&nbsp;if the byte at data pointer is zero|[|&nbsp;while(\*ptr){|
+|黄奈孑ちゃん黄奈子ちゃん|&nbsp;jump to '黄奈孑ちゃん黄奈子ちゃん' <br>&nbsp;if the byte at data pointer is zero|]|&nbsp;}|
+
+最終的な仕様書は[ここ](https://github.com/Seigenkousya/kinako-chan/blob/develop/README.md)から見られます。  
+よく見るとそれぞれの命令が少しずつ異なっています。内部のデータが違ければなんでもいいんのでなるべく近い見た目のものを選定しました。  
+黄と黃、子と孑の4つの組み合わせが2つあるので理論上はbrainfuckの二倍の16命令を持つことができます。  
+この記事の執筆時点でのバージョンは1.0.2ですが、命令はbrainfuckと同様に8個です。これから拡張するかも知れません。  
+
+## 実装
+仕様が決まれば後はもう実装するだけです。（技術的な話が続くので興味ない人は飛ばしてください）  
+何で実装しようか迷ったんですが勉強も兼ねてC++で実装することにしました。日本語（というより2byte文字）の扱いが難しい言語ですがこれも勉強です。  
+僕はC++を書こうとするとC言語にどんどん近づいていく癖があるのでそれを封印するのが大変でした。早くこれになりたい。  
+![](https://pbs.twimg.com/media/EUH_eMWUwAAgsV4?format=jpg&name=medium)
+
+### C++における日本語の扱い
+「黄奈子ちゃん」は日本語なので普通のASCII文字（いわゆる半角）とは扱いが違います。char型では扱えません。  
+最初はchar \*型でバイナリレベルで比較すればいいかってなったんですがそれだとビジュアライザを作るときに厄介になるのでちゃんと文字列型で取ることにしました。  
+C++の場合はstd::stringではなくstd::wstringを使って文字を表します。  
+いわゆるワイド文字の扱いをするわけです。ここで厄介なのがロケールの問題。  
+出力先の文字コードがわからないと上手く表示できないので予めコード内で設定する必要があるのです。  
+```cpp
+#include <iostream>
+#include <string>
+
+int main(void){
+  std::locale::global(std::locale(""));
+  std::wstring hello=L"日本語の出力"; 
+  
+  std::wcout << hello << std::endl; 
+
+  return 0;
+}
+```
+ここで結構詰まった...  
+また、std::coutとstd::wcoutは混在すると出力がバグってかなり厄介になります。  
+はっきり言って地獄です。  
+なので今回は出力ストリームをstd::wcoutに統一しました。（出力ストリームの混在が不可能だと知って途中で変えたので大変だった）  
+あわせて出力に関わるすべての文字列型をstd::wstringにしました。（少々もったいないですが）  
+
+### 処理の大まかな流れ
+kinako-chanは今のところインタプリタで動作する言語です。  
+実行ファイルを吐いたりはせずその場で結果を出力します。  
+```zsh
+$ ./kinako-chan terget_file.knk
+```
+みたいな感じでファイル（拡張子は.knk）を引数に与えて実行します。  
+デフォルトではビジュアライズ機能もついていてどのコードの部分でどのようにデータが操作されているのかを見ることができます。  
+それでは大まかな処理の流れを見ながら解説していきましょう。  
+
+#### 1.オプションの確認
+インタプリタkinako-chanは様々な引数を取るのでそれを最初に確認してオプションごとに分岐してます。  
+といってもargcの個数を確認して条件分岐をしてargvをstrcmpしてるだけですが。  
+オプションごとにflagを書き換える感じで素直に実装してます。  
+
+#### 2.ファイル読み込み
+引数にファイルをとっているのでそれをstd::wstringに代入して処理しています。
+```cpp
+// read file
+std::wifstream file(filename);
+
+if(!file){
+	std::wcerr << L"failed to open file." << std::endl;
+	std::exit(1);
+}
+
+// get stiring
+std::wstringstream wss;
+wss << file.rdbuf();
+std::wstring source=wss.str();
+```
+失敗したらエラーコードを吐かせるのを忘れずに。    
+普通に処理すると行ごとの取得になってしまうので一度すべてstd::wstringにぶちこむのがポイント。  
+
+#### 3.コードを整形
+コードを整形と構文の確認をします。  
+具体的にはkinako-chanで採用している「黄,奈,子,ち,ゃ,ん,黃,孑」以外の文字（改行を含む）を除外します。  
+```cpp
+void syntax_check(std::wstring& source){
+	int index=0;
+	std::wstring tokens=L"黄奈子ちゃん黃孑";
+	while(index!=source.size()){
+		if(tokens.find(source[index])==std::wstring::npos){
+			source.erase(index,1);
+		}else{
+			index++;
+		}
+	}
+
+	if(source.size()%12!=0){
+		std::wcerr << L"undefined token." << std::endl;
+	}
+}
+```
+それからトークンの文字数があっているかなどの軽い構文チェックもしてます。（といっても文字数によるチェックだけですが）  
+そうすると後々の処理がかなり楽になります。  
+オプションによってはここでコードを変換した後結果を出力して処理を終了させます。  
+  
+それから与えられたコードを中間コード(brainfuck)に変換します。  
+なぜこれをやるかと言うとビジュアライザの機能の方でbrainfuckに変換したコードを表示するからという合理的な理由と
+既にbrainfuckのインタプリタとビジュアライザを作ってあるのでここで変換しておくと関数が流用できるというゲスい理由があります。  
+
+#### 4.処理
+ついに処理です。  
+メモリを確保して命令に従ってデータポインタと数値を操作します。  
+配列は有限なのでデータポインタが配列の外側に行ってないかポインタを移動させる前に確認させます。  
+```cpp
+void within_range(uint8_t *now){
+	if(now-head<0 || now>head+MEMORY_SIZE){
+		std::wcerr << L"now:" << now << L" head:" << head << std::endl;
+		std::wcerr << L"now-head:" << (int)(now-head) << std::endl;
+		std::wcerr << L"point out of range." << std::endl;
+		std::exit(1);
+	}
+}
+```
+uint8_t型の配列なので255を越えても変な値にならず0になります。（安全性の確保）  
+一度処理をするごとにデータを画面に表示します。  
+
+#### 5.データと結果の表示
+デフォルトではビジュアライザの機能がオンになっていて20msごとに命令が解釈されて画面に表示されます。    
+ここが一番実装に時間をかけた処理かも知れません。    
+難解な言語なのでこの機能は必須です。    
+表示するデータとして    
+- メモリの状態
+- データポインタの位置
+- kinako-chanの現在実行しているトークン
+- brainfuckに置き換えたときのコードと現在実行しているトークン
+- 出力された文字
+
+を表示しています。  
+基本的にはシステムコマンドで画面をクリアしてエスケープシーケンスでカーソルを移動してAAでデータを描画している感じですね。    
+実行しているトークンには色付け表示もしました。    
+実行するコードが最後まで行くとプログラムが自動で止まって終わりです。  
+
+### 開発手法の話
+そして今回は開発手法の方にも力を入れました。（実装自体は難しくないのでここら辺の挑戦もした）
+言語開発なので正式な手順を踏んでやりたかったのです。
+
