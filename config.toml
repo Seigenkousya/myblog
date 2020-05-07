@@ -6,7 +6,7 @@ title = "正弦工社"
 publishdir="public"
 pygmentsCodeFences=true
 googleAnalytics="UA-158095539-1"
-ignorefiles=["post/tech/kinako-chan/index.html"]
+ignorefiles=["post/tech/kinako-chan/*"]
 
 [params]
 author = "Takana Norimasa"
