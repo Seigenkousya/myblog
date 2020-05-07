@@ -22,7 +22,7 @@ draft: false
 
 みなさんご存知2巻のタイポグラフィ回です。（予告絵のカーソルで桃音ちゃんのほっぺをもちもちしてるやつ好き）  
 僕はその中のこのコマに着目しました。    
-![](https://pbs.twimg.com/media/DOw0HQDVwAE92LD?format=jpg&name=medium)    
+![](https://seigenkousya.github.io/images/typing_momone.jpg)
 そして僕は気がついてしまったのです...  
 <font size="5"><b>もしもこの世に黄奈子ちゃんという言葉だけで構成されたプログラミング言語を開発したらこのコマの桃音ちゃんのお気持ちになってプログラムを書けるのでは？</b></font>と。  
 おそらくこの行を読んで9割の人間がブラウザバックしたと思うので残りの1割の方はそのまま聞いてください。  
