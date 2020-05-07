@@ -8,9 +8,9 @@ draft: true
 
 ## はじめに
 この前TLでどうびじゅが完結して一周年だという話題が上がっていてもう一年経つのかという驚きと同時に
-一年経っても未だに絵を書いてる人とか語っている人がいて同じどうびじゅが好きな人間として嬉しいなぁと思いました。  
+一年経っても未だに絵を書いてる人とか語っている人がいて同じどうびじゅが好きな人間として嬉しいなぁと感じます。  
 真に素晴らしい作品は例え月日が流れてもファンの間で語り続けられるんだなぁと感動しました。    
-なんて希望のあるなの事実でしょうか。  
+なんて希望のある事実でしょうか。  
 感動しつつあれこれ考えながら過去のどうびじゅに関するツイートを色々見返していたんですがふとこんなツイートを見かけたんです。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">きららMAX1月号の大人気連載、相崎うたう先生の「どうして私が美術科に!?」！今回はタイポグラフィの課題ということで、初めてのPCルームにはしゃぐX室メンバーです。しかし桃音さん、そのデザインは……。コミックス第1巻好評発売中！（<a href="https://t.co/a2r7QMa2pB">https://t.co/a2r7QMa2pB</a>） <a href="https://t.co/CVzkRQdXom">pic.twitter.com/CVzkRQdXom</a></p>&mdash; まんがタイムきらら編集部 (@mangatimekirara) <a href="https://twitter.com/mangatimekirara/status/931176574824542208?ref_src=twsrc%5Etfw">November 16, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
@@ -34,7 +34,8 @@ draft: true
 
 でもパターンを少なくすると今度はコードが以上に長くなって可読性が落ちるので「黄奈子ちゃん」という言葉と見た目の形はそのままに文字を微妙に変えて表現することにしました。  
 さてどうやって言語を実装しようかと悩んでいたのですが、単純な言語実装として有名な[brainfuck](https://ja.wikipedia.org/wiki/Brainfuck)をベースにすることにしました。[^1]  
-[^1]:そういうプログラミング言語があるんです。（リンク参照）  
+[^1]:そういうプログラミング言語があるんです。  
+[https://ja.wikipedia.org/wiki/Brainfuck](https://ja.wikipedia.org/wiki/Brainfuck)
 
 brainfuckは8個の命令からなる超小型のプログラミング言語です。大きな要素数を持ったuint8_t型の一次元配列とそれらの各要素を指すデータポインタによって構成されています。  
 各命令はこんな感じです。
@@ -71,8 +72,8 @@ brainfuckのインタプリタ（プログラムを解釈して実行するプ�
 |黃奈子ちゃん黃奈子ちゃん|&nbsp;decrement the byte at the data pointer|<|&nbsp;ptr--;|
 |黃奈子ちゃん黄奈孑ちゃん|&nbsp;output the byte at the data pointer|.|&nbsp;putchar(\*ptr);|
 |黃奈子ちゃん黃奈孑ちゃん|&nbsp;accept one byte of input|,|&nbsp;\*ptr=getchar();|
-|黄奈子ちゃん黄奈孑ちゃん|&nbsp;jump to '黄奈子ちゃん黄奈孑ちゃん' <br>&nbsp;if the byte at data pointer is zero|[|&nbsp;while(\*ptr){|
-|黄奈孑ちゃん黄奈子ちゃん|&nbsp;jump to '黄奈孑ちゃん黄奈子ちゃん' <br>&nbsp;if the byte at data pointer is zero|]|&nbsp;}|
+|黄奈子ちゃん黄奈孑ちゃん|&nbsp;jump to '黄奈孑ちゃん黄奈子ちゃん' <br>&nbsp;if the byte at data pointer is zero|[|&nbsp;while(\*ptr){|
+|黄奈孑ちゃん黄奈子ちゃん|&nbsp;jump to '黄奈子ちゃん黄奈孑ちゃん' <br>&nbsp;if the byte at data pointer is zero|]|&nbsp;}|
 
 最終的な仕様書は[ここ](https://github.com/Seigenkousya/kinako-chan/blob/develop/README.md)から見られます。  
 よく見るとそれぞれの命令が少しずつ異なっています。内部のデータが違ければなんでもいいんのでなるべく近い見た目のものを選定しました。  
@@ -186,7 +187,8 @@ hello world!
   
 何で実装しようか迷ったんですが勉強も兼ねてC++で実装することにしました。  
 日本語（というより2byte文字）の扱いが難しい言語ですがこれも勉強です。  
-僕はC++を書こうとするとC言語にどんどん近づいていく癖があるのでそれを封印するのが大変でした。早くこれになりたい。  
+僕はC++を書こうとするとC言語にどんどん近づいていく癖があるのでそれを封印するのが大変でした。  
+早くこれになりたい。  
 ![](https://pbs.twimg.com/media/EUH_eMWUwAAgsV4?format=jpg&name=medium)
 
 ### C++における日本語の扱い
@@ -373,7 +375,8 @@ ver x.x.x: バージョンごとに切る。
 今回は完璧にこの考えに則って開発したわけではありませんが自動的に複数の環境でテストを行えただけでも大きかったと思います。  
 おかげで何個もバグに気付けましたし持ってないmacOSにもなんとか対応できました。  
 これが無料なんてすごいですね。（ソフトウェア界隈はこういうサービスがことごとく無料でありがたい）
-[^2]:実際企業のプロジェクトでやるときはどうするんだろう。外部のサービスを使うわけにも行かないだろうし。
+[^2]:実際企業のプロジェクトでやるときはどうするんだろう。  
+外部のサービスを使うわけにも行かないだろうし。やっぱり内部で構築するのかな？  
 
 #### ドキュメントの充実
 ちゃんとした言語なのできちんとドキュメントを書こうと決めました。（まだ不十分だけど）  
@@ -389,7 +392,7 @@ Makefileのおかげでインストール方法も簡潔になってちゃんと
 懸念していたmacOSの表示関係がドンピシャでOUTです。  
 手元に環境がなくて不安だったのですが使ってくださった方が報告してくださって早めに気づくことができました。（ありがとうございます）  
 さて、手元に環境が無い（構築不可）上に頼みのTravis CIは画面クリアなど表示系の部分まで対応していません。  
-どうやらエスパー[^3]でバグを治す必要があります。（地獄）  
+どうやらエスパー[^3]でバグを治す必要があるようです。（地獄）  
 [^3]:要は勘です。肝心なのは祈り。
 
 どちらもmacOSでのバグだったのでこちらのlinuxで動いている以上OS依存の問題だということになります。  
@@ -401,28 +404,29 @@ kinako-chanの内部システムでOS依存の処理だと考えられるのは�
 最初に疑ったのは画面クリアの処理です。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">フレームが残っているということは画面を正常にクリアできていないということである<br>エスケープシーケンスまわりが原因か？<br>brainwash: std::system(&quot;clear&quot;)<br>kinako-chan: L&quot;\033c&quot;</p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1258042071874592770?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
   
-上手く表示できないなら上手く画面をクリアできてないのではと考えました。  
+上手く表示ができないならちゃんと画面をクリアできてないのではと考えました。  
 実際、画面消去に使っていたエスケープシーケンスである"\033c"はKDEのコンソールで動かない問題があったのですが、直接の原因ではありませんでした。  
 結局ここで多くの画面消去法を試してみましたが結局確かめようが無いので色々考えていました。  
 そして遂にひらめきました。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">分かった！（超速理解）<br>ターミナルのsetlocaleがmacとlinuxで違う（多分）から2byte文字に入る最初の「黄奈子ちゃん」で躓いて止まるんだ</p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1258068408714715137?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
   
 超速理解（激遅理解）  
-よくよく送られたスクリーンショットを見てみるとどちらも最初の「黄奈子ちゃん」を描画しようとする部分で出力が止まっています。  
-これで気づきました。日本語の出力方法に問題があって止まっていたのです。  
+よくよく送られたスクリーンショットを見てみると、どちらも最初の「黄奈子ちゃん」を描画しようとする部分で出力が止まっています。  
+これでようやく気づきました。日本語の出力方法に問題があって止まっていたのです。  
 setlocaleは環境によってはかなり設定するのが厄介なのでおそらくここだと目星を付けました。  
-あとはエスパーしてmacで動きそうな方法を選んで修正しておしまいにしました。（2行追加）  
+あとはエスパーしてmacで動きそうな方法を選んで修正しました。（2行追加）  
 ```diff
 + std::ios_base::sync_with_stdio(false);
   std::locale::global(std::locale(""));
 + std::wcout.imbue(std::locale(""));
 ```
-朝見たらどうやらmacOSでも動くようになったようです。  
+今思えばよくこんなあっさり手元にない環境に対応したコードをかけたな...（エスパーデバッガーの才能あり？）  
+朝見たらどうやらちゃんとmacOSでも動くようになったようです。  
 めでたしめでたし。  
 修正版をver 1.0.3としてリリースしました。  
 
-今回の一件で複数の環境に対応させる大変さを知りました。（環境を持ってないなら尚更）  
-本当に今回ご協力頂いた両名に感謝します。ありがとうございました。  
+今回の一件で複数の環境に対応させる大変さを知りました。（持ってない環境なら尚更）  
+本当に今回ご協力頂いた両名に改めて感謝します。ありがとうございました。  
 これからにも役立ついい経験になったかなと思います。  
 
 ## kinako-chanの今後
