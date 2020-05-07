@@ -6,6 +6,7 @@ title = "正弦工社"
 publishdir="public"
 pygmentsCodeFences=true
 googleAnalytics="UA-158095539-1"
+ignorefiles=["post/tech/kinako-chan/*"]
 
 [params]
 author = "Takana Norimasa"
@@ -38,3 +39,4 @@ logo = "/images/logo.png"
 	icon="fab icon-quiita fa-2x"
 	weight=3
 	url = "https://qiita.com/Seigenkousya"
+
