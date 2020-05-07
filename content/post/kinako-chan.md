@@ -8,9 +8,9 @@ draft: true
 
 ## はじめに
 この前TLでどうびじゅが完結して一周年だという話題が上がっていてもう一年経つのかという驚きと同時に
-一年経っても未だに絵を書いてる人とか語っている人がいて同じどうびじゅが好きな人間として嬉しいなぁと思いました。
-本当に素晴らしい作品は例え月日が流れてもファンの間で語り続けられるんだなぁと感動しました。  
-なんて希望のある事実でしょうか。  
+一年経っても未だに絵を書いてる人とか語っている人がいて同じどうびじゅが好きな人間として嬉しいなぁと思いました。  
+真に素晴らしい作品は例え月日が流れてもファンの間で語り続けられるんだなぁと感動しました。    
+なんて希望のあるなの事実でしょうか。  
 感動しつつあれこれ考えながら過去のどうびじゅに関するツイートを色々見返していたんですがふとこんなツイートを見かけたんです。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">きららMAX1月号の大人気連載、相崎うたう先生の「どうして私が美術科に!?」！今回はタイポグラフィの課題ということで、初めてのPCルームにはしゃぐX室メンバーです。しかし桃音さん、そのデザインは……。コミックス第1巻好評発売中！（<a href="https://t.co/a2r7QMa2pB">https://t.co/a2r7QMa2pB</a>） <a href="https://t.co/CVzkRQdXom">pic.twitter.com/CVzkRQdXom</a></p>&mdash; まんがタイムきらら編集部 (@mangatimekirara) <a href="https://twitter.com/mangatimekirara/status/931176574824542208?ref_src=twsrc%5Etfw">November 16, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
@@ -59,7 +59,7 @@ brainfuckは8個の命令からなる超小型のプログラミング言語で�
 これを見ればある程度はこの言語のやっていることが分かるのでは無いでしょうか。  
 
 brainfuckのインタプリタ（プログラムを解釈して実行するプログラム）ができたのでbrainfuckが持っている8命令をそのまま自分の好きな言葉で置き換えれば黄奈子ちゃん言語が完成するということになります。  
-簡単ですね！
+簡単ですね！（適当）  
 
 試行錯誤の末（結局確定するのに2日くらいかかった）仕様は以下のようになりました。
 
@@ -77,10 +77,10 @@ brainfuckのインタプリタ（プログラムを解釈して実行するプ�
 最終的な仕様書は[ここ](https://github.com/Seigenkousya/kinako-chan/blob/develop/README.md)から見られます。  
 よく見るとそれぞれの命令が少しずつ異なっています。内部のデータが違ければなんでもいいんのでなるべく近い見た目のものを選定しました。  
 黄と黃、子と孑の4つの組み合わせが2つあるので理論上はbrainfuckの二倍の16命令を持つことができます。  
-この記事の執筆時点でのバージョンは1.0.2ですが、命令はbrainfuckと同様に8個です。これから拡張するかも知れません。  
+この記事の執筆時点でのバージョンは~~1.0.2~~ 1.0.3ですが、命令はbrainfuckと同様に8個です。これから拡張するかも知れません。  
 
 ## できたもの
-いつもならここで長々と技術的な話をするのですが、それをやると結果を見る前にページを閉じてしまう危険性があるので先に成果物を見て貰いましょう。  
+いつもならここで長々と技術的な話をするのですが、それをやると知らない人はつまらないと思うので先に成果物を見て貰いましょう。  
 その方が技術的な話をするときにも想像しやすいですしね。  
 デモの動画がこちらになります。  
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">桃音ちゃんのお気持ちになってプログラムを書きたくなったのでプログラミング言語kinako-chanを開発しました<a href="https://twitter.com/hashtag/doubiju?src=hash&amp;ref_src=twsrc%5Etfw">#doubiju</a> <a href="https://t.co/zm17APApYH">pic.twitter.com/zm17APApYH</a></p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1258005872011173888?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -92,8 +92,94 @@ brainfuckのインタプリタ（プログラムを解釈して実行するプ�
 大量の黄奈子ちゃん成分を補給することもできて一石二鳥です。  
 **素晴らしいですね。**  
 
+## kinako-chanをはじめよう
+[レポジトリのREADME](https://github.com/Seigenkousya/kinako-chan/blob/master/README.md)にも書いてますがkinako-chan入門をさらに噛み砕いてここに書いてみたいと思います。  
+一応、ある程度知識がある人を想定して書いてます。  
+Unix初心者から中級者くらいですかね。  
+OSはLinuxとMacに対応しています。~~（Macの方は確認待ちだけど）~~  
+まずインストールにはgitを使います。  
+```zsh
+$ git clone  https://github.com/Seigenkousya/kinako-chan.git
+
+Cloning into 'kinako-chan'...
+remote: Enumerating objects: 132, done.
+remote: Counting objects: 100% (132/132), done.
+remote: Compressing objects: 100% (83/83), done.
+remote: Total 409 (delta 80), reused 94 (delta 47), pack-reused 277
+Receiving objects: 100% (409/409), 301.91 KiB | 640.00 KiB/s, done.
+Resolving deltas: 100% (243/243), done.
+```
+
+kinako-chanというディレクトリができるので移動します。
+```zsh
+$ cd kinako-chan/
+```
+
+最後にmakeしてインストールします。
+```zsh
+$ make install 
+
+g++ -g -O0 -I./include -o src/obj/display.o -c src/display.cpp
+g++ -g -O0 -I./include -o src/obj/code_check.o -c src/code_check.cpp
+g++ -g -O0 -I./include -o src/obj/main.o -c src/main.cpp
+g++ -g -O0 -I./include -o src/obj/process.o -c src/process.cpp
+g++ -O2 -o ./kinako-chan src/obj/display.o src/obj/code_check.o src/obj/main.o src/obj/process.o
+```
+
+これでkinako-chanというファイルができたらOKです。  
+サンプルとしてexample.knkというファイルがあるので試しに実行してみましょう。  
+```zsh
+$ ./kinako-chan example.knk
+```
+
+動いたでしょうか？ビジュアライズされて表示されたかと思います。  
+でもいつもこれだと時間がかかります。  
+結果だけ欲しいときは以下のようにします。  
+```zsh
+$ ./kinako-chan -n example.knk
+```
+
+### hello world
+hello worldをやってみましょう。
+hello worldは以下のように書きます。
+```zsh
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈孑ちゃん
+黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黃奈子ちゃん黃奈子ちゃん黃奈子ちゃん黃奈子ちゃん黃奈子ちゃん
+黃奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん
+黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黃奈子ちゃん黄奈孑ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黃奈子ちゃん黃奈子ちゃん
+黃奈子ちゃん黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黄奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん
+黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黃奈子ちゃん黄奈孑ちゃん
+黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん
+黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈子ちゃん黃奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黃奈子ちゃん黄奈子ちゃん
+黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん黃奈子ちゃん黄奈子ちゃん黄奈子ちゃん黄奈子ちゃん黃奈子ちゃん黄奈孑ちゃん
+```
+
+これをhello_world.knkとして保存して、  
+```zsh
+$ ./kinako-chan -n hello_world.knk
+
+hello world!
+```
+として実行するとhello world!の結果が得られると思います。  
+これで入門完了です。  
+
 ## 実装
-仕様が決まれば後はもう実装するだけです。（技術的な話が続くので興味ない人は飛ばしてください）  
+というわけで実装の話です。  
+仕様が決まれば後はもう実装するだけです。（技術的な話が続くので興味ない人は"kinako-chanの今後"の章まで飛ばしてください）  
 リポジトリはこちら。
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/Seigenkousya/kinako-chan" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FSeigenkousya%2Fkinako-chan&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>  
 
@@ -142,7 +228,10 @@ $ ./kinako-chan terget_file.knk
 インタプリタkinako-chanは様々な引数を取るのでそれを最初に確認してオプションごとに分岐してます。  
 といってもargcの個数を確認して条件分岐をしてargvをstrcmpしてるだけですが。  
 オプションごとにflagを書き換える感じで素直に実装してます。  
-#### 2.ファイル読み込み 引数にファイルをとっているのでそれをstd::wstringに代入して処理しています。 ```cpp
+
+#### 2.ファイル読み込み 
+引数にファイルをとっているのでそれをstd::wstringに代入して処理しています。 
+```cpp
 // read file
 std::wifstream file(filename);
 
@@ -160,7 +249,7 @@ std::wstring source=wss.str();
 普通に処理すると行ごとの取得になってしまうので一度すべてstd::wstringにぶちこむのがポイント。  
 
 #### 3.コードを整形
-コードを整形と構文の確認をします。  
+コード整形と構文の確認をします。  
 具体的にはkinako-chanで採用している「黄,奈,子,ち,ゃ,ん,黃,孑」以外の文字（改行を含む）を除外します。  
 ```cpp
 void syntax_check(std::wstring& source){
@@ -217,7 +306,7 @@ uint8_t型の配列なので255を越えても変な値にならず0になりま
 - 出力された文字
 
 を表示しています。  
-基本的にはシステムコマンドで画面をクリアしてエスケープシーケンスでカーソルを移動してAAでデータを描画している感じですね。    
+基本的には~~システムコマンドで画面をクリアして~~エスケープシーケンスで画面をクリアしてカーソルを移動してAAでデータを描画している感じですね。    
 実行しているトークンには色付け表示もしました。    
 実行するコードが最後まで行くとプログラムが自動で止まって終わりです。  
 
@@ -253,20 +342,22 @@ uint8_t型の配列なので255を越えても変な値にならず0になりま
 正直ここまでちゃんとソースを階層に分けたのは初めてです。  
 これでだいぶ見た目がスッキリしてメンテナンスが容易になりました。  
 
-これに合わせてMakefileも書き換えることに。（結構詰まった）  
-makefileのいい練習になりました。（かなり勉強になった）  
+これに合わせてMakefileも書き換えることに。（エラーが多発して結構詰まった）  
+Makefileのいい練習になりました。  
 
 #### ブランチの有効活用
 いつもはついmasterで作業しがちですが、途中で煩わしくなってちゃんとブランチを切るようにしました。  
 具体的には、  
 master: 本番環境。mergeによってのみ更新。  
 develop: 基本開発はここ。ここから作業ごとにブランチを切る。  
-fix: 今回は使わなかった。issueごとに切ることになると思う。  
+~~fix: 今回は使わなかった。issueごとに切ることになると思う。~~  
+fix: めっちゃ使った。develop or masterから分岐してバグを直す。図らずとも大活躍してしまった。  
 ver x.x.x: バージョンごとに切る。  
-って感じ。その他にも作業の内容で切ったこともあった。  
+って感じ。その他にも作業の内容でdevelopから切ったこともあった。  
   
 今回はcloneされる前提で開発する必要があるのでちゃんとブランチを切らないと作業途中のところでダウンロードされる可能性があるんですよね。  
-これからもこのルールは守っていきたい。  
+今までみたいにmasterで作業するわけには行かない。  
+これからもこのルールは守って開発して行きたいです。  
 恩恵としてはブランチ名を決めることでやることが明確になることと衝突を避けられるということでしょうか。  
 
 #### Travis CIの活用
@@ -290,6 +381,50 @@ ver x.x.x: バージョンごとに切る。
 こういうのはエンジニア界隈では基本的に英語です。英語が不自由なので辛かった...  
 Makefileのおかげでインストール方法も簡潔になってちゃんと書いておいて良かったなと思いました。  
 
+## えーーーー！@Seigenkousyaの担当箇所がバグだらけ！？
+はい。（はいじゃねぇよ）  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">えーーーー！<a href="https://twitter.com/Seigenkousya?ref_src=twsrc%5Etfw">@Seigenkousya</a> の担当箇所がバグだらけ！？</p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1258066173574307840?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+やってしまいました。  
+懸念していたmacOSの表示関係がドンピシャでOUTです。  
+手元に環境がなくて不安だったのですが使ってくださった方が報告してくださって早めに気づくことができました。（ありがとうございます）  
+さて、手元に環境が無い（構築不可）上に頼みのTravis CIは画面クリアなど表示系の部分まで対応していません。  
+どうやらエスパー[^3]でバグを治す必要があります。（地獄）  
+[^3]:要は勘です。肝心なのは祈り。
+
+どちらもmacOSでのバグだったのでこちらのlinuxで動いている以上OS依存の問題だということになります。  
+kinako-chanの内部システムでOS依存の処理だと考えられるのは次の3つです。  
+- 画面をクリアする```"\033c"```
+- ウィンドウのサイズを取得する```ioctl(STDOUT_FILENO,TIOCGWINSZ,&size);```
+- wstringの出力文字コードを指定する```std::locale::global(std::locale(""));```
+
+最初に疑ったのは画面クリアの処理です。  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">フレームが残っているということは画面を正常にクリアできていないということである<br>エスケープシーケンスまわりが原因か？<br>brainwash: std::system(&quot;clear&quot;)<br>kinako-chan: L&quot;\033c&quot;</p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1258042071874592770?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+上手く表示できないなら上手く画面をクリアできてないのではと考えました。  
+実際、画面消去に使っていたエスケープシーケンスである"\033c"はKDEのコンソールで動かない問題があったのですが、直接の原因ではありませんでした。  
+結局ここで多くの画面消去法を試してみましたが結局確かめようが無いので色々考えていました。  
+そして遂にひらめきました。  
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">分かった！（超速理解）<br>ターミナルのsetlocaleがmacとlinuxで違う（多分）から2byte文字に入る最初の「黄奈子ちゃん」で躓いて止まるんだ</p>&mdash; 正弦工社 (@Seigenkousya) <a href="https://twitter.com/Seigenkousya/status/1258068408714715137?ref_src=twsrc%5Etfw">May 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+超速理解（激遅理解）  
+よくよく送られたスクリーンショットを見てみるとどちらも最初の「黄奈子ちゃん」を描画しようとする部分で出力が止まっています。  
+これで気づきました。日本語の出力方法に問題があって止まっていたのです。  
+setlocaleは環境によってはかなり設定するのが厄介なのでおそらくここだと目星を付けました。  
+あとはエスパーしてmacで動きそうな方法を選んで修正しておしまいにしました。（2行追加）  
+```diff
++ std::ios_base::sync_with_stdio(false);
+  std::locale::global(std::locale(""));
++ std::wcout.imbue(std::locale(""));
+```
+朝見たらどうやらmacOSでも動くようになったようです。  
+めでたしめでたし。  
+修正版をver 1.0.3としてリリースしました。  
+
+今回の一件で複数の環境に対応させる大変さを知りました。（環境を持ってないなら尚更）  
+本当に今回ご協力頂いた両名に感謝します。ありがとうございました。  
+これからにも役立ついい経験になったかなと思います。  
+
 ## kinako-chanの今後
 今後実装したい機能として、
 - 残りの8個の命令を策定して実装（せっかく8つ余っているので）
@@ -297,6 +432,7 @@ Makefileのおかげでインストール方法も簡潔になってちゃんと
 - コンパイラを作る（コンパイラ言語として対応）
 - wikiを作成する（さらなる仕様の策定）
 - OSS化
+- Webで動くインタプリタを作る
 - osx + g++ の組み合わせに対応する（clang++が前提だが一応）
 
 などが挙げられます。  
