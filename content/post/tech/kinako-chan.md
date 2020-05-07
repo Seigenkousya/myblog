@@ -5,8 +5,10 @@ tags: ["技術活動","どうして私が美術科に！？"]
 categories: "技術活動"
 draft: false
 ---
+<head>
 <meta name="twitter:image" content="https://pbs.twimg.com/media/DOw0HQDVwAE92LD?format=jpg&name=large" />
 <meta name="twitter:card" content="summary_large_image"/>
+</head>
 
 ## はじめに
 この前TLでどうびじゅが完結して一周年だという話題が上がっていてもう一年経つのかという驚きと同時に
