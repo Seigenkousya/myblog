@@ -3,7 +3,7 @@ title: '桃音ちゃんのお気持ちになって開発できるプログラミ
 date: 2020-05-06T01:07:03+09:00
 tags: ["技術活動","どうして私が美術科に！？"]
 categories: "技術活動"
-metaimage: "https://pbs.twimg.com/media/DOw0HQDVwAE92LD?format=jpg&name=medium"
+metaimage: "http://seigenkousya.github.io/images/typing_momone.jpeg"
 is_large: "summary_large_image"
 draft: false
 ---
