@@ -11,7 +11,7 @@ draft: false
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【きらら9月号】今月号の表紙を飾るのは、荒井チェリー先生「むすんで、つないで。」！<br>待望のコミックス第1巻が8月27日に発売です!!<br>全員で集合写真〜♪ ハイっチーズ！<br>(倉石つなぐさんは撮影の日に欠席だったため、別撮りとなっております)　<a href="https://twitter.com/hashtag/kirara?src=hash&amp;ref_src=twsrc%5Etfw">#kirara</a> <a href="https://t.co/KvVRl9nSed">pic.twitter.com/KvVRl9nSed</a></p>&mdash; まんがタイムきらら編集部 (@mangatimekirara) <a href="https://twitter.com/mangatimekirara/status/1291388862694952961?ref_src=twsrc%5Etfw">August 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   
-表紙のキャプションが無慈悲すぎる...  
+欠席者の写真のキャプションが無慈悲すぎる...  
 
 # 感想  
 Twitterに載せるのが憚られるようなネタバレ的感想が飛び交うので読んでない人（そんな人はここにたどり着かない）はご注意下さい．  
