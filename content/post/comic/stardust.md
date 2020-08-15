@@ -16,10 +16,10 @@ draft: false
 }
 </style>
 
-<font face="movlov">peggyov=movlov, pivou bovvu=vuv!</font>  
+<font face="movlov">peggjov=movlov, pivou bovvu=vuv!</font>  
 ということで星屑テレパスの感想を書きます．  
 本誌の感想を怠っていたので[^1]ここでまとめて言ってしまおうという魂胆です．  
-宇宙語が上手く表示されない人はごめんなさい．書き下し文だと思って下さい．  
+宇宙語が上手く表示されない人はごめんなさい．書き下し文だと思って下さい．（暴論）  
 せっかくなので前半はまだ読んだこと無いひと向けに書こうかな．  
   
 [^1]:今月発売した号からはじめました．
