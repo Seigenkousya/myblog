@@ -3,16 +3,16 @@ title: "星屑テレパス1巻 感想とあれこれ"
 date: 2020-08-15T15:54:48+09:00
 tags: ["感想","星屑テレパス"]
 categories: "感想"
-draft: false
+draft: true
 ---
 
 <style>
 @font-face {
 	font-family: 'movlov';
-	src: url(/fonts/Movlov-Regular.ttf);
 	/*
-	src: url(~/Blog/public/fonts/Movlov-Regular.ttf);
+	src: url(/fonts/Movlov-Regular.ttf);
 	*/
+	src: local(/home/general/Blog/public/fonts/Movlov-Regular.ttf);
 }
 </style>
 
@@ -461,7 +461,8 @@ Google翻訳とエスペラント辞書を行き来しながら見るとわか�
 Google翻訳はエスペラント<--->日本語とエスペラント<--->英語の2つを同時に見ながらのほうが安全です．  
 スペルチェックはしないで自動補完されるのでそれだけは注意．  
 
-対応をとるのが面倒なあなたのためにエスペラントと宇宙語の対応表を示します．
+対応をとるのが面倒なあなたのためにエスペラントと宇宙語の対応表を示します．[^4]
+[^4]:宇宙語が見られん人は許して下さい（懇願）
 
 |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|R|S|T|U|V|Z|ĉ|ĝ|ĥ|ĵ|ŝ|ŭ|  
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|  
@@ -469,13 +470,52 @@ Google翻訳はエスペラント<--->日本語とエスペラント<--->英語�
 
 Hは作中の宇宙語には出てきません．今後に期待．  
 また，Q,W,X,Yはそもそもベースとなっているエスペラントに無いので今後も出てこないでしょう．  
-人名とか英単語に使われるなら別ですが．  
+人名とか英単語に宇宙語が使われるなら別ですが．  
 宇宙語フォントはこのために自作したやつなので万が一にも間違ってるかも知れません．ご注意下さい．  
-スキャンとかじゃなくて僕の手書きなのでちょっと違うかも...
+スキャンとかじゃなくて僕の手書きなので厳密にはちょっと違うかも...
 
+さて，宇宙語は物語の色んな所に出てきます．
+順に追っていきましょう．
+#### 作者紹介
+<font face="movlov">kosma lingvo</font>:<font face="movlov">peggjov=movlov pivou bovvu=vuv, Civj en la universe !!</font>  
+esperanto:peggjov=movlov pivou bovvu=vuv, ĉivj en la universe !!  
+日本語:宇宙の皆さん こんにちは！！  
+  
+もはや皆さんおなじみの挨拶．  
+ĉivj en la universeは，宇宙の全て（皆さん）の意．  
 
+#### ユウの学生証（単行本P5）
+<font face="movlov">kosma lingvo</font>:<font face="movlov">verdire, mi estas...</font>  
+esperanto:verdire, mi estas...  
+日本語:実は，私は...  
+  
+**見切れてて分からん！**  
+ハイパー大事なことがここに書かれているわけです．  
+もうこの時点で素晴らしすぎて死にそう．  
 
+#### 手帳の表紙(P32R4)
+<font face="movlov">kosma lingvo</font>:<font face="movlov">spaca vojaGa taglibro</font>  
+esperanto:spaca vojaĝa taglibro  
+日本語:宇宙航海日誌  
 
+これを読めそう...と思った（そして，読めた）海果は何者なんだ...
+
+#### 日誌の最後のページ(P33R1)
+これは大変だ...
+一行ずつ行きましょう．
+和訳は死ぬほど怪しいです．お客様の中にエスペラントに堪能な方はいませんか？
+
+<font face="movlov">Ci tiu kosmoveturilo neplu utilas.</font>  
+Ci tiu kosmoveturilo neplu utilas.
+この宇宙船はもう役に立たない．
+
+<font face="movlov">iuj el la funkcioj jam finis sion rolon.</font>  
+iuj el la funkcioj jam finis sion rolon.
+一部の機能は既に役割を終えている．
+
+<font face="movlov">mi ne pavas ripari ilin.</font>  
+mi ne pavas ripari ilin.
+私にはこれを直せない．
 
 
 
