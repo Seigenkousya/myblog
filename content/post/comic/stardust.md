@@ -443,9 +443,9 @@ P117R1で100万回くらい死んでしまった．
 本当に1巻の完成度が死ぬほど高い．衝撃．  
 
 ## <font face="movlov">konsideri</font>
-こっから考察です．
-果たしてここまで無事にたどり着いた人がいるのでしょうか？
-あとでここの部分だけ別の記事にもまとめよう．
+こっから考察です．  
+果たしてここまで無事にたどり着いた人がいるのでしょうか？  
+あとでここの部分だけ別の記事にもまとめよう...  
 
 ### <font face="movlov">kosma lingvo</font>
 宇宙語に関する考察です．  
@@ -458,8 +458,19 @@ P117R1で100万回くらい死んでしまった．
 [Google 翻訳](https://translate.google.co.jp/?hl=ja)  
 [エスペラント辞書](http://www.mikage.to/esperanto/#)  
 Google翻訳とエスペラント辞書を行き来しながら見るとわかりやすいです．  
-Google翻訳はエスペラント<=>日本語とエスペラント<=>英語の2つを同時に見ながらのほうが安全です．  
+Google翻訳はエスペラント<==>日本語とエスペラント<==>英語の2つを同時に見ながらのほうが安全です．  
 スペルチェックはしないで自動補完されるのでそれだけは注意．  
+
+対応をとるのが面倒なあなたのためにエスペラントと宇宙語の対応表を示します．
+
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|R|S|T|U|V|Z|ĉ|ĝ|ĥ|ĵ|ŝ|ŭ|  
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|  
+|<font face='movlov'>a</font>|<font face='movlov'>b</font>|<font face='movlov'>c</font>|<font face='movlov'>d</font>|<font face='movlov'>e</font>|<font face='movlov'>f</font>|<font face='movlov'>g</font>| |<font face='movlov'>i</font>|<font face='movlov'>j</font>|<font face='movlov'>k</font>|<font face='movlov'>l</font>|<font face='movlov'>m</font>|<font face='movlov'>n</font>|<font face='movlov'>o</font>|<font face='movlov'>p</font>|<font face='movlov'>r</font>|<font face='movlov'>s</font>|<font face='movlov'>t</font>|<font face='movlov'>u</font>|<font face='movlov'>v</font>|<font face='movlov'>z</font>|<font face='movlov'>C</font>|<font face='movlov'>G</font>| |<font face='movlov'>J</font>|<font face='movlov'>S</font>|<font face='movlov'>U</font>|  
+
+Hは作中の宇宙語には出てきません．今後に期待．  
+また，Q,W,X,Yはそもそもベースとなっているエスペラントに無いので今後も出てこないでしょう．  
+人名とか英単語に使われるなら別ですが．  
+宇宙語フォントはこのために自作したやつなので万が一にも間違ってるかも知れません．ご注意下さい．  
 
 
 
