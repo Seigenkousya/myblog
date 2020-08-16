@@ -5,16 +5,13 @@ tags: ["感想","星屑テレパス"]
 metaimage: "https://seigenkousya.github.io/images/hoshikuzu.jpeg"
 is_large: "summary_large_image"
 categories: "感想"
-draft: true
+draft: false
 ---
 
 <style>
 @font-face {
 	font-family: 'movlov';
-	/*
 	src: url(/fonts/Movlov-Regular.ttf);
-	*/
-	src: local(/home/general/Blog/public/fonts/Movlov-Regular.ttf);
 }
 </style>
 
