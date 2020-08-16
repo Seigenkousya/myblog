@@ -8,6 +8,11 @@ categories: "感想"
 draft: false
 ---
 
+<font face="movlov">peggjov=movlov, pivou bovvu=vuv!</font>  
+ということで星屑テレパスの感想を書きます．  
+本誌の感想を怠っていたので[^1]ここでまとめて言ってしまおうという魂胆です．  
+宇宙語が上手く表示されない人はごめんなさい．書き下し文だと思って下さい．（暴論）  
+  
 <style>
 @font-face {
 	font-family: 'movlov';
@@ -15,11 +20,6 @@ draft: false
 }
 </style>
 
-<font face="movlov">peggjov=movlov, pivou bovvu=vuv!</font>  
-ということで星屑テレパスの感想を書きます．  
-本誌の感想を怠っていたので[^1]ここでまとめて言ってしまおうという魂胆です．  
-宇宙語が上手く表示されない人はごめんなさい．書き下し文だと思って下さい．（暴論）  
-  
 [^1]:今月発売号からはじめました．
 
 ## <font face="movlov">epitomo</font>
