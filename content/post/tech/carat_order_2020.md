@@ -3,6 +3,8 @@ title: "まんがタイムきららキャラットの掲載順を可視化・分
 date: 2020-03-16T19:40:40+09:00
 tags: ["技術活動","まんがタイムきららキャラット"]
 categories: "技術活動"
+metaimage: "https://seigenkousya.github.io/images/hoshikuzu.jpeg"
+is_large: "summary_large_image"
 draft: false
 ---
 
